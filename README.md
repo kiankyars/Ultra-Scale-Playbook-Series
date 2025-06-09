@@ -5,6 +5,13 @@ This is a companion repo to the YouTube video series that walks through the Hugg
 
 ---
 
+##Target Audience
+	•	Intermediate ML/LLM developers
+	•	Comfortable with PyTorch and basic Transformer training
+	•	New to GPU cluster-level distributed training
+
+---
+
 ## 📺 Episodes & Notebooks
 
 | Episode | Title | Notebook |
