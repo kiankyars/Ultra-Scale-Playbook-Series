@@ -9,7 +9,7 @@ This is a companion repo to the YouTube video series that walks through the Hugg
 
 | Episode | Title | Notebook |
 |--------:|-----------------------------|-----------------------------|
-| 01 | What is Scaling? | [`01_scaling_basics.ipynb`](notebooks/01_scaling_basics.ipynb) |
+| 01 | What is Scaling? | [`01_scaling_basics.ipynb`](01_scaling_basics.ipynb) |
 | 02 | Training on One GPU | *Coming Soon* |
 | 03 | Memory in Transformers | *Coming Soon* |
 | 04 | Activation Recomputation | *Coming Soon* |
