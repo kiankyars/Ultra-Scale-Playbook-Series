@@ -1,0 +1,8 @@
+[project]
+name = "ultra-scale-playbook-series"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "youtube-transcript-api>=1.1.0",
+]
