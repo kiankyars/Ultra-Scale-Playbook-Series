@@ -12,29 +12,6 @@ This is a companion repo to the YouTube video series that walks through the Hugg
 
 ---
 
-## 📺 Episodes & Notebooks
-
-| Episode | Title | Notebook |
-|--------:|-----------------------------|-----------------------------|
-| 01 | What is Scaling? | [`01_scaling_basics.ipynb`](01_scaling_basics.ipynb) |
-| 02 | Activation Memory & Recomputation | [`02_activation_memory_recomputation.ipynb`](02_activation_memory_recomputation.ipynb) |
-| 03 | Memory in Transformers | *Coming Soon* |
-| 04 | Activation Recomputation | *Coming Soon* |
-| 05 | Gradient Accumulation | *Coming Soon* |
-| 06 | Data Parallelism | *Coming Soon* |
-| 07 | Optimizing DDP | *Coming Soon* |
-| 08 | ZeRO Strategies | *Coming Soon* |
-| 09 | Tensor Parallelism | *Coming Soon* |
-| 10 | TP in Transformers | *Coming Soon* |
-| 11 | Sequence Parallelism | *Coming Soon* |
-| 12 | Context Parallelism | *Coming Soon* |
-| 13 | Pipeline Parallelism | *Coming Soon* |
-| 14 | Full 5D Strategy | *Coming Soon* |
-| 15 | Real Benchmarks | *Coming Soon* |
-| 16 | FlashAttention & Kernels | *Coming Soon* |
-
----
-
 ## Setup Instructions
 
 ```bash
@@ -42,4 +19,4 @@ git clone https://github.com/neuralkian/ultra-scale-playbook-series.git
 cd ultra-scale-playbook-series
 ```
 
-- Use colab or local development to open notebooks!
+- Use colab or local development to access notebooks!
