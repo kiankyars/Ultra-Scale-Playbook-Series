@@ -30,7 +30,7 @@ This is part of the Ultra-Scale Playbook series that teaches how to scale LLM tr
 ## Requirements
 
 ### 1. Content Requirements
-- **Title**: Use format "# Ultra-Scale Playbook: Part X" where X is the episode number
+- **Title**: Use format "# Ultra-Scale Playbook: Part {episode_number}"
 - **Overview section**: Bullet points explaining what will be covered
 - **Educational content**: Mix of markdown explanations and code examples
 - **2 Interactive Exercises**: Hands-on coding exercises that reinforce the concepts
@@ -41,7 +41,6 @@ This is part of the Ultra-Scale Playbook series that teaches how to scale LLM tr
 - Include proper imports
 - Add comments explaining complex concepts
 - Use realistic examples that demonstrate scaling concepts
-- Reference previous notebooks when relevant (e.g., "Building on what we learned in episode 1...")
 
 ### 3. Educational Approach
 - Important: Simple explanations
@@ -58,10 +57,8 @@ Based on the above transcript, create a complete Jupyter notebook that:
 1. Follows the exact format requirements above
 2. Teaches the key concepts from the video
 3. Includes 2 meaningful hands-on exercises
-4. Maintains consistency with the existing notebook style
-5. Uses appropriate episode numbering and naming
 
-Please provide the downloadable Jupyter notebook in the following format: `{episode_number}_episode_name.ipynb`
+Package the notebook as a downloadable .ipynb file in the following format: `{episode_number}_episode_name.ipynb`
 """
     
     return prompt
