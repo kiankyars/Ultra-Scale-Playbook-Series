@@ -6,7 +6,6 @@ Extracts transcript from YouTube video and creates a prompt for LLM to generate 
 
 import sys
 from youtube_transcript_api import YouTubeTranscriptApi
-import re
 import yt_dlp
 
 
@@ -44,16 +43,9 @@ This is part of the Ultra-Scale Playbook series that teaches how to scale LLM tr
 - Use realistic examples that demonstrate scaling concepts
 - Reference previous notebooks when relevant (e.g., "Building on what we learned in episode 1...")
 
-### 3. Naming Convention
-- This is episode {episode_number}
-- Filename: `{episode_number}_episode_name.ipynb`
-- Keep topic name concise but descriptive
-
-### 4. Educational Approach
-- Start with simple explanations
-- Build complexity gradually
-- Include visual analogies when helpful
-- Provide practical, runnable code examples
+### 3. Educational Approach
+- Important: Simple explanations
+- Practical, runnable code examples
 - Connect concepts to real-world LLM training scenarios
 
 ## Video Transcript
@@ -69,7 +61,7 @@ Based on the above transcript, create a complete Jupyter notebook that:
 4. Maintains consistency with the existing notebook style
 5. Uses appropriate episode numbering and naming
 
-Please provide the complete notebook as a JSON structure that can be saved as a .ipynb file.
+Please provide the downloadable Jupyter notebook in the following format: `{episode_number}_episode_name.ipynb`
 """
     
     return prompt
