@@ -77,18 +77,18 @@ Please provide the complete notebook as a JSON structure that can be saved as a 
 
 
 def get_video_id_from_playlist(playlist_url, episode_number):
-    """Fetch playlist and find video ID by episode number in title"""
+    """Fetch playlist and find video ID by episode number in aria-label of video links"""
     resp = requests.get(playlist_url)
     soup = BeautifulSoup(resp.text, 'html.parser')
-    # Find all video links in playlist
     for a in soup.find_all('a', href=True):
-        title = a.get('title')
         href = a['href']
-        if title and str(episode_number) in title:
-            # Extract video ID from href
-            match = re.search(r'v=([\w-]+)', href)
-            if match:
-                return match.group(1)
+        if '/watch?v=' in href:
+            aria_label = a.get('aria-label')
+            print(aria_label)
+            if aria_label and str(episode_number) in aria_label:
+                match = re.search(r'v=([\w-]+)', href)
+                if match:
+                    return match.group(1)
     raise ValueError(f"Episode {episode_number} not found in playlist")
 
 
