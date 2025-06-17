@@ -58,7 +58,8 @@ Based on the above transcript, create a complete Jupyter notebook that:
 2. Teaches the key concepts from the video
 3. Includes 2 meaningful hands-on exercises
 
-Package the notebook as a downloadable .ipynb file in the following format: `{episode_number}_episode_name.ipynb`
+ALWAYS Package the notebook as a downloadable .ipynb file in the following format: `{episode_number}_episode_name.ipynb`
+DO NOT OUTPUT RAW JSON
 """
     
     return prompt
