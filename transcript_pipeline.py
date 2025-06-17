@@ -6,9 +6,8 @@ Extracts transcript from YouTube video and creates a prompt for LLM to generate 
 
 import sys
 from youtube_transcript_api import YouTubeTranscriptApi
-import requests
-from bs4 import BeautifulSoup
 import re
+import yt_dlp
 
 
 def get_transcript(video_id):
@@ -77,18 +76,15 @@ Please provide the complete notebook as a JSON structure that can be saved as a 
 
 
 def get_video_id_from_playlist(playlist_url, episode_number):
-    """Fetch playlist and find video ID by episode number in aria-label of video links"""
-    resp = requests.get(playlist_url)
-    soup = BeautifulSoup(resp.text, 'html.parser')
-    for a in soup.find_all('a', href=True):
-        href = a['href']
-        if '/watch?v=' in href:
-            aria_label = a.get('aria-label')
-            print(aria_label)
-            if aria_label and str(episode_number) in aria_label:
-                match = re.search(r'v=([\w-]+)', href)
-                if match:
-                    return match.group(1)
+    """Use yt-dlp to get video ID by episode number in title from playlist"""
+    ydl_opts = {'quiet': True, 'extract_flat': True, 'skip_download': True}
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(playlist_url, download=False)
+        for entry in info['entries']:
+            title = entry.get('title', '')
+            print(title)
+            if title and str(episode_number) in title:
+                return entry['id']
     raise ValueError(f"Episode {episode_number} not found in playlist")
 
 
