@@ -35,8 +35,8 @@
     Correction: "...memory is allocated **throughout** training."
 
 **Subsection: WEIGHTS/GRADS/OPTIMIZER STATES MEMORY (within Memory usage in Transformers)**
-14. Error: "...dominate at large hidden dimensions is the **h2** term since it’s the only one..."
-    Correction: "...dominate at large hidden dimensions is the **h²** term since it’s the only one..."
+14. Error: "...dominate at large hidden dimensions is the **h2** term since it's the only one..."
+    Correction: "...dominate at large hidden dimensions is the **h²** term since it's the only one..."
 15. Error: "**mparams_f p32** = 4 ∗ N" (and similar instances)
     Correction: "**mparams_fp32** = 4 ∗ N"
 16. Error: "...require an additional **mparams_f p32** = 4 ∗ N memory."
@@ -74,8 +74,8 @@
     Correction: "...will be extremely **useful** to understand and validate..."
 
 **Section: Data Parallelism**
-31. Error: "...(we call the **replica's** “model instances”) and run forward..."
-    Correction: "...(we call the **replicas** “model instances”) and run forward..."
+31. Error: "...(we call the **replica's** "model instances") and run forward..."
+    Correction: "...(we call the **replicas** "model instances") and run forward..."
 32. Error: "...backward pass **the** finish so that we have all gradients..."
     Correction: "...backward pass **to** finish so that we have all gradients..."
 
@@ -88,8 +88,8 @@
     Correction: "While this **speeds up** communication, it also contributes in part..."
 
 **Section: Our journey up to now**
-35. Error: "See Harm’s **blogpost** for a detailed analysis."
-    Correction: "See Harm’s **blog post** for a detailed analysis."
+35. Error: "See Harm's **blogpost** for a detailed analysis."
+    Correction: "See Harm's **blog post** for a detailed analysis."
 36. Error: "...less efficient **which** each additional GPU we add..."
     Correction: "...less efficient **with** each additional GPU we add..."
 37. Error: "**Lets** see this happening in practice with some benchmark:"
@@ -98,8 +98,8 @@
     Correction: "...will involve either **moving** some tensors to the CPU..."
 
 **Subsection: MEMORY USAGE REVISITED (within ZeRO (Zero Redundancy Optimizer))**
-39. Error: "Let’s explain this graph and **it’s** values by exploring..."
-    Correction: "Let’s explain this graph and **its** values by exploring..."
+39. Error: "Let's explain this graph and **it's** values by exploring..."
+    Correction: "Let's explain this graph and **its** values by exploring..."
 
 **Subsection: ZERO-1: PARTITIONING OPTIMIZER STATES (within ZeRO (Zero Redundancy Optimizer))**
 40. Error: "...each replica **need** all the parameters, we thus need to add..."
@@ -110,14 +110,14 @@
 **Subsection: ZERO-3: ADDING PARAMETER PARTITIONING (within ZeRO (Zero Redundancy Optimizer))**
 42. Error: "This may **sounds** like a lot of communication overhead..."
     Correction: "This may **sound** like a lot of communication overhead..."
-43. Error: "...our equation now reached **it’s** final form of..."
+43. Error: "...our equation now reached **it's** final form of..."
     Correction: "...our equation now reached **its** final form of..."
 44. Error: "To overcome **this** issues, it's time to explore a new..."
     Correction: "To overcome **these** issues, it's time to explore a new..."
 
 **Section: Tensor Parallelism**
-45. Error: "Let’s see how we can **parallelise** this operation!"
-    Correction: "Let’s see how we can **parallelize** this operation!" (assuming US English consistency)
+45. Error: "Let's see how we can **parallelise** this operation!"
+    Correction: "Let's see how we can **parallelize** this operation!" (assuming US English consistency)
 
 **Subsection: Tensor Parallelism in a Transformer Block**
 46. Error: "...between both **splitted** operations."
@@ -136,8 +136,8 @@
 **Section: Context Parallelism**
 51. Error: "The core idea of Context **Parrallelism** is to apply a similar idea..."
     Correction: "The core idea of Context **Parallelism** is to apply a similar idea..."
-52. Error: "...after all we’ve already **convered** but... there is a trick..."
-    Correction: "...after all we’ve already **covered** but... there is a trick..."
+52. Error: "...after all we've already **convered** but... there is a trick..."
+    Correction: "...after all we've already **covered** but... there is a trick..."
 53. Error: "...exception though as **we we** need to pay particular attention..."
     Correction: "...exception though as **we** need to pay particular attention..."
 54. Error: "...the attention module will **requires** full communication between GPUs..."
@@ -247,7 +247,7 @@ Informal 1. Error: "...CUDA: hardest, fastest, and **flexiblest** (if you get it
 88. Error: "...e4m3 has an even smaller **ranger**."
     Correction: "...e4m3 has an even smaller **range**."
 
-**Section: So, what’s next?**
+**Section: So, what's next?**
 89. Error: "...we just scratched **to** surface of several of these tools..."
     Correction: "...we just scratched **the** surface of several of these tools..."
 90. Error: "...You can find a very **extenside** list of the most impactful papers..."
