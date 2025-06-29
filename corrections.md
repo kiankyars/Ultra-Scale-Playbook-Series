@@ -4,6 +4,7 @@
 
 **Error:** `how how`
 
+---
 
 **Section:** Activation recomputation
 
@@ -11,6 +12,7 @@
 
 **Error:** `recomputation`
 
+---
 
 **Section:** FlashAttention
 
@@ -18,6 +20,7 @@
 
 **Error:** `wraps`
 
+---
 
 **Section:** Pipeline Parallelism
 
@@ -25,6 +28,7 @@
 
 **Error:** `Breadth-Fist`
 
+---
 
 **Section:** Profiling GPU compute and communication
 
@@ -32,6 +36,7 @@
 
 **Error:** `A CPU threads`
 
+---
 
 **Section:** 5D Parallelism in a Nutshell
 
@@ -39,6 +44,7 @@
 
 **Error:** `are` should be `and`.
 
+---
 
 **Section:** 5D Parallelism in a Nutshell
 
@@ -46,6 +52,7 @@
 
 **Error:** `scales` should be `scale`. This is a subject-verb agreement error.
 
+---
 
 **Section:** Step 1: Fitting a training step in memory
 
@@ -53,6 +60,7 @@
 
 **Error:** `becomes` should be `become`. This is a subject-verb agreement error.
 
+---
 
 **Section:** Step 1: Fitting a training step in memory
 
@@ -60,6 +68,7 @@
 
 **Error:** `provide` should be `provides`. This is a subject-verb agreement error.
 
+---
 
 **Section:** Lessons learned on benchmarking
 
@@ -67,6 +76,7 @@
 
 **Error:** `help making` is grammatically incorrect. It should be `help make`.
 
+---
 
 **Section:** Diving into the GPUs – Fusing, Threading, and Mixing
 
@@ -74,6 +84,7 @@
 
 **Error:** `executions` should be the singular `execution`.
 
+---
 
 **Section:** FlashAttention
 
@@ -81,6 +92,7 @@
 
 **Error:** The empty square brackets `[]`
 
+---
 
 **Section:** A0: Parallel Programming Crash Course
 
@@ -88,6 +100,7 @@
 
 **Error:** In the code snippet, `initi_process_group` is a typo and should be `init_process_group`.
 
+---
 
 **Section:** A0: Parallel Programming Crash Course
 
@@ -95,6 +108,7 @@
 
 **Error:** In the code snippet, `example\_broadcats()` is a typo and should be `example_broadcast()`.
 
+---
 
 **Section:** A1: Distributed Training Profiling
 
@@ -102,6 +116,7 @@
 
 **Error:** `would like this` is grammatically incorrect in this context and should be `would look like this`.
 
+---
 
 **Section:** A3: Math for Compute/Communication Overlap
 
@@ -109,9 +124,12 @@
 
 **Error:** There is an extraneous backtick `` at the end of the "ZeRO-3 (FSDP) communication analysis" section.
 
+---
 
 **Section:** A3: Math for Compute/Communication Overlap
 
 **Context:** Interestingly, the ratio only depends on the hidden size h and tensor parallelism degree TP, not on sequence length or batch size.
 
 **Error:** `tp` should be `TP` to be consistent with its usage throughout the rest of the document.
+
+---
